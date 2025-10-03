@@ -5,10 +5,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class WelcomeController {
+public class Pages {
 
-    @GetMapping("/countries")
-    public String getCountries() {
-        return "no countries db yet";
+    @GetMapping("/")
+    public String welcome(Model model) {
+        return "Welcome to the countries website!";
     }
 }
